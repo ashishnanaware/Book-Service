@@ -1,0 +1,25 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/book_store
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  spring:
+    mvc:
+      pathmatch:
+        matching-strategy: ant-path-matcher
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+
+
+
+
